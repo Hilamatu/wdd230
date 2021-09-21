@@ -1,0 +1,30 @@
+header, main, footer{
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+header, footer{
+    background-color: blue;
+    padding: 1.5rem;
+}
+
+h1, footer {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+header img{
+    float: right;
+    width: 150px;
+    height: auto;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+}
+
+.lastmodified{
+    color: yellow;
+}
