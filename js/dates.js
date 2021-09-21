@@ -1,2 +1,2 @@
-const copyrightyear = document.getElementById("#copyrightyear");
+const copyrightyear = document.getElementById("copyrightyear");
 copyrightyear.textContent = Date.getFullYear();
