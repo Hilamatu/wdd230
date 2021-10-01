@@ -47,3 +47,17 @@ footer{
     color: white;
     font-size: 20px;
 }
+
+.ryan, li {
+    padding: 0.20rem;
+    font-size: 20px;
+}
+
+.rebeca, li{
+    padding: 0.20rem;
+    font-size: 20px;
+}
+
+.ryan-photo, .rebeca-photo {
+    width: 150px;
+}
