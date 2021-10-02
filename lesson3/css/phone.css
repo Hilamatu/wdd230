@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+
 body {
     background-color: black;
   
@@ -40,6 +43,7 @@ nav a:hover {
 
 p {
     font-size: 20px;
+    font-family: Verdana, Helvetica, sans-serif;
 }
 
 footer{
@@ -61,4 +65,9 @@ footer{
 
 .ryan-photo, .rebeca-photo {
     width: 150px;
+}
+
+h1, h2, h3 {
+    
+    font-family: "Rock Salt", cursive;
 }
