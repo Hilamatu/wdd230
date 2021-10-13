@@ -113,8 +113,58 @@ footer p {
     padding: 5px;
 }
 
+.flex {
+	display: flex;
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+	flex-flow: row wrap;
+    border-right: 1px solid #333;
+}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: rgb(177, 177, 177);
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	text-align: center;
+}
+
+.flex {
+	border-right: 1px solid #333;
+}
+
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+}
 
 
+.forecast img {
+    width: 50px;
+	border-radius: 100px;
+	padding: 0.25rem;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.col-head {
+	font-weight: 700;
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+}
+
+.pancake {
+    background-color: red;
+    color: white;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
