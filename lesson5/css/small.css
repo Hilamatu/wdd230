@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+body{
+    background-color: black;
+}
+
+main{
+    background-color: white;
+}
+
+h1, h2, h3{
+    font-family: "Rock Salt", cursive;
+}
+p {
+    font-family: Verdana, helvetica, Tahoma, sans-serif;
+}
+    
+
+header {
+    display: flex;
+}
+
+
+.logo{
+    width: 130px;
+    height: 135px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header h1 {
+    color:red;
+    font-size: 25px;
+}
+
+.motto {
+    color: white;
+    margin-top: -40px;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+nav button {
+    margin: .2rem, 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: rgb(218, 216, 216);
+}
+
+nav {
+    background-color: rgb(65, 62, 62);
+    font-family: Verdana, helvetica, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    border-top: 2px solid rgba(0, 0,0, 0.1);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0,0, 0.4);
+}
+
+nav ul li.active a{
+    background-color: rgba(0, 0,0, 0.2);
+    color: white;
+}
+
+nav ul.hide{
+    display: none;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.content {
+    background-color: rgb(177, 177, 177);
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.forecast {
+    background-color: rgb(177, 177, 177);
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.article{
+    background-color: rgb(177, 177, 177);
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.social img{
+    width: 45px;
+    padding: 5px;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

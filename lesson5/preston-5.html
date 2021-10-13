@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Town Weather page</title>
+    <meta name="description" content="Preston-5 Assignment for Hyrum Hilamatu in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../lesson5/css/small.css">
+    <link rel="stylesheet" href="../lesson5/css/medium.css">
+    <link rel="stylesheet" href="../lesson5/css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <script defer src="../js/dates.js"></script>  
+    <script defer src="../lesson5/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../lesson5/images/logo.jpeg" alt="Boarder Weather logo">
+        
+        <div class="motto">
+            <h1>Boarder Weather</h1>
+            <p>Check the weather, ride forever!</p>
+        </div>   
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801 Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="../lesson5/preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="content">
+            <img src="../lesson5/images/skate.jpg" alt="Skateboarding in the city">
+        </div> 
+        <div class="forecast">5 Day forecast</div>
+        <div class="article">Article</div>
+    </main>
+    <footer>
+       <p>&copy; Board weather - Hyrum Hilamatu - Japan - BYU online learning</p>
+       <p id="date"></p>
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+              <img src="../lesson5/images/facebook.png" alt="facebook icon"></a>
+            <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+              <img class="mail" src="../lesson5/images/gmail.png" alt="gmail icon"></a>
+          </div>
+    </footer>    
+</body>
+</html>
