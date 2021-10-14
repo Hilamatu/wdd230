@@ -34,5 +34,19 @@
     nav ul li a {
         border: none;
     }
-    
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .weathersummary {
+        top: 50px;
+        left: 40px;
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 20px;
+    }
+
     }

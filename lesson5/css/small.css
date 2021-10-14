@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 
+
+.nocancake{
+    display: none;
+}
+.pancake {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
 body{
     background-color: black;
+    margin: 50px;
+    margin-top: 20px;
 }
 
 main{
     background-color: white;
+    padding: 10px 30px;
+    margin-bottom: 10px;
 }
 
 h1, h2, h3{
@@ -42,7 +56,7 @@ header h1 {
 }
 
 nav button {
-    margin: .2rem, 2%;
+    margin: .2rem 2%;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
@@ -85,24 +99,50 @@ main h2 {
     text-align: center;
 }
 
-.content {
-    background-color: rgb(177, 177, 177);
-    padding: 30px;
-    margin-bottom: 10px;
+.content img {
+    width: 300px;
+
 }
 
-.forecast {
-    background-color: rgb(177, 177, 177);
-    padding: 30px;
-    margin-bottom: 10px;
+.content {
+    position: relative;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background: rgba(177,177,177, 0.8);
+    padding: 10px;
+    font-size: 15px;
+}
+
+.article img {
+    width: 300px;
 }
 
 .article{
-    background-color: rgb(177, 177, 177);
-    padding: 30px;
-    margin-bottom: 10px;
+    margin-top: 100px;
+}
+.flex {
+    display: none;
 }
 
+footer {
+    background-color: rgb(177, 177, 177);
+}
+
+footer .map{
+    display: none;
+}
+
+.address h3{
+    color: black;
+}
+
+.address {
+    text-align: center;
+}
 footer p {
     color: white;
     text-align: center;
@@ -113,58 +153,15 @@ footer p {
     padding: 5px;
 }
 
-.flex {
-	display: flex;
-	/* flex-direction: row; */
-	/* let us combine row and wrap with flow */
-	flex-flow: row wrap;
-    border-right: 1px solid #333;
+.social {
+    display: flex;
+    justify-content: center;
 }
 
-.flex-col {
-	flex: 1 1 auto;
-	background-color: rgb(177, 177, 177);
-	border-bottom: 1px solid #333;
-	border-left: 1px solid #333;
-	text-align: center;
+.footer-bar {
+    background-color: black;
 }
 
-.flex {
-	border-right: 1px solid #333;
-}
-
-.col-head {
-	display: block;
-	padding: 5px;
-	border-bottom: 1px solid #333;
-	text-align: center;
-}
-
-
-.forecast img {
-    width: 50px;
-	border-radius: 100px;
-	padding: 0.25rem;
-}
-
-.data {
-	display: block;
-	padding: 0 5px 5px;
-	font-size: 1rem;
-	text-align: center;
-}
-
-.col-head {
-	font-weight: 700;
-	font-size: 1rem;
-	background-color: black;
-	color: white;
-}
-
-.pancake {
-    background-color: red;
-    color: white;
-}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";

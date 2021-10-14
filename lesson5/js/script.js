@@ -17,3 +17,7 @@ let date = newDate.getDate();
 let dateTime = weekDay + "," + " " + date + " " + month + " " + year;
 
 document.getElementById("date").innerHTML = dateTime
+
+if (weekDay !== "Friday") {
+    document.getElementById("notification").style.display = "none"
+}

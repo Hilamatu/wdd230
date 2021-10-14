@@ -17,10 +17,10 @@
     <script defer src="../lesson5/js/script.js"></script>
 </head>
 <body>
-    <section class="pancake">
+    <div id ="notification" class="pancake">
         <p><strong>Saturday = </strong>Preston Pancakes in the Park!<br>9:00
         a.m Saturday at the city park.</p>
-    </section>
+        </div>
     <header>
         <img class="logo" src="../lesson5/images/logo.jpeg" alt="Boarder Weather logo">
         
@@ -30,7 +30,7 @@
         </div>   
     </header>
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#8801 Menu</button>
+        <button onclick="toggleMenu()">&#8801; Menu</button>
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="../lesson5/preston-5.html">Preston</a></li>
@@ -49,7 +49,6 @@
                 <h3>Weather Summary</h3>
                 <p><strong>Currently: </strong>Sunny</p>
                 <p><strong>High: </strong>76°F</p>
-                <p><strong>Wind Chill: </strong>°F</p>
                 <p><strong>Humidity: </strong>69%</p>
                 <p><strong>Wind Speed: </strong>5 mph</p>
             </section>
@@ -85,8 +84,9 @@
         </div>
         <div class="article">
             <h3>Short History of skateboarding</h3>
-            <img src="../lesson5/images/skater.jpg" alt="Skater doing a trick">
-            <p>Skateboarding was first invented in the 1950s in California. It’s tricky to 
+            
+            <p> <img src="../lesson5/images/skater.jpg" alt="Skater doing a trick">
+                Skateboarding was first invented in the 1950s in California. It’s tricky to 
                 pin down the very first skateboard, but it was a sport created by surfers who 
                 wanted something to do when the waves were low. In the US it grew in popularity 
                 until it peaked around 1963, before a crash in the market in 1965. Skateboarding 
@@ -99,14 +99,23 @@
         </div>
     </main>
     <footer>
-       <p>&copy; Board weather - Hyrum Hilamatu - Japan - BYU online learning</p>
-       <p id="date"></p>
-        <div class="social">
-            <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
-              <img src="../lesson5/images/facebook.png" alt="facebook icon"></a>
-            <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
-              <img class="mail" src="../lesson5/images/gmail.png" alt="gmail icon"></a>
-          </div>
+        <section class="contact-information">
+            <img class="map" src="../lesson5/images/map.jpg" alt="Preston Map">
+            <div class="address">
+                <h3>Boarder Weather</h3>
+                <span><img src="../lesson5/images/gps.png" alt="gps icon">W Idaho 36,<br>Preston, ID 83263</span>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+                    <img src="../lesson5/images/facebook.png" alt="facebook icon"></a>
+                <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+                    <img class="mail" src="../lesson5/images/gmail.png" alt="gmail icon"></a>
+            </div>
+        </section>            
+        <div class="footer-bar">
+            <p>&copy; Board weather - Hyrum Hilamatu - Japan - BYU online learning</p>
+            <p id="date"></p>
+        </div>
     </footer>    
 </body>
 </html>
