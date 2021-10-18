@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Town Weather page</title>
+    <meta name="description" content="Preston-5 Assignment for Hyrum Hilamatu in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../lesson6/css/small.css">
+    <link rel="stylesheet" href="../lesson6/css/medium.css">
+    <link rel="stylesheet" href="../lesson6/css/large.css">
+    <script defer src="../js/dates.js"></script>  
+    <script defer src="../lesson6/js/script.js"></script>
+</head>
+<body>
+    <div id ="notification" class="pancake">
+        <p><strong>Saturday = </strong>Preston Pancakes in the Park!<br>9:00
+        a.m Saturday at the city park.</p>
+    </div>
+    <header>
+        <img class="logo" src="../lesson6/images/logo.jpeg" alt="Boarder Weather logo">
+        
+        <div class="motto">
+            <h1>Boarder Weather</h1>
+            <p>Check the weather, ride forever!</p>
+        </div>   
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="content">
+            <img src="../lesson6/images/skate.jpg" alt="Skateboarding in the city">
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p><strong>Currently: </strong>Sunny</p>
+                <p><strong>High: </strong>76°F</p>
+                <p><strong>Humidity: </strong>69%</p>
+                <p><strong>Wind Speed: </strong>5 mph</p>
+            </section>
+        </div> 
+        <div class="forecast">
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head">Wed</span>
+                    <img src="../lesson6/images/sun.png" alt="Sun">
+                    <span class="data">89°F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Thu</span>
+                    <img src="../lesson6/images/sun.png" alt="Sun">
+                    <span class="data">87°F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Fri</span>
+                    <img src="../lesson6/images/sun.png" alt="Sun">
+                    <span class="data">78°F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Sat</span>
+                    <img src="../lesson6/images/sun.png" alt="Sun">
+                    <span class="data">75°F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Sun</span>
+                    <img src="../lesson6/images/sun.png" alt="Sun">
+                    <span class="data">72°F</span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <h3>Short History of skateboarding</h3>
+            
+            <p> <img src="../lesson6/images/skater.jpg" alt="Skater doing a trick">
+                Skateboarding was first invented in the 1950s in California. It’s tricky to 
+                pin down the very first skateboard, but it was a sport created by surfers who 
+                wanted something to do when the waves were low. In the US it grew in popularity 
+                until it peaked around 1963, before a crash in the market in 1965. Skateboarding 
+                was seen as a fad that had run its course.
+                This changed in the early 1970s with the creation of urethane skateboard wheels, 
+                rather than the rickety old metal or wooden wheels on the original boards. The moulded 
+                wheels suddenly made it much easier to skate over less-than-perfect terrain.
+                It evolved and finally in 2020 it was finally included in the olympics!
+            </p>
+        </div>
+    </main>
+    <footer>
+        <section class="contact-information">
+            <img class="map" src="../lesson6/images/map.jpg" alt="Preston Map">
+            <div class="address">
+                <h3>Boarder Weather</h3>
+                <span><img src="../lesson6/images/gps.png" alt="gps icon">W Idaho 36,<br>Preston, ID 83263</span>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+                    <img src="../lesson5/images/facebook.png" alt="facebook icon"></a>
+                <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+                    <img class="mail" src="../lesson5/images/gmail.png" alt="gmail icon"></a>
+            </div>
+        </section>            
+        <div class="footer-bar">
+            <p>&copy; Board weather - Hyrum Hilamatu - Japan - BYU online learning</p>
+            <p id="date"></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+         WebFont.load({google: {families: ['Rock Salt']}})
+    </script>    
+</body>
+</html>
