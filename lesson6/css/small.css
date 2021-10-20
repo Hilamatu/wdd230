@@ -98,7 +98,7 @@ main h2 {
 }
 
 .content img {
-    width: 300px;
+    width: 100%;
 
 }
 
@@ -109,10 +109,11 @@ main h2 {
 .weathersummary {
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 50px;
     background: rgba(177,177,177, 0.8);
     padding: 10px;
     font-size: 15px;
+    font-family: Verdana, helvetica, Tahoma, sans-serif;
 }
 
 .article img {

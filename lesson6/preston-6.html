@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../lesson6/css/large.css">
     <script defer src="../js/dates.js"></script>  
     <script defer src="../lesson6/js/script.js"></script>
+    <script defer src="../lesson6/js/windchill.js"></script>
 </head>
 <body>
     <div id ="notification" class="pancake">
@@ -41,13 +42,19 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="content">
-            <img src="../lesson6/images/skate.jpg" alt="Skateboarding in the city">
+            <figure>
+                <img src="../lesson6/images/preston1200.png" alt="Green field on a sunny day"
+                    srcset="../lesson6/images/preston400.png 560w,
+                            ../lesson6/images/preston800.png 1024w,
+                            ../lesson6/images/preston1200.png 1200w">
+            </figure>
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <p><strong>Currently: </strong>Sunny</p>
-                <p><strong>High: </strong>76°F</p>
+                <p><strong>High: </strong><span id="temp">6</span>°F<p>
+                <p><strong>Wind Chill: </strong><span id="windChill"></span></p>
                 <p><strong>Humidity: </strong>69%</p>
-                <p><strong>Wind Speed: </strong>5 mph</p>
+                <p><strong>Wind Speed: </strong><span id="speed">5</span>s mph</p>
             </section>
         </div> 
         <div class="forecast">
