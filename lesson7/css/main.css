@@ -1,0 +1,12 @@
+main {
+    text-align:center;
+}
+
+
+picture img[data-src] {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 400px;
+ }
