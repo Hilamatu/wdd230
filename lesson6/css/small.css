@@ -161,6 +161,7 @@ footer p {
     background-color: black;
 }
 
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
