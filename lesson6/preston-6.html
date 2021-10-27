@@ -42,12 +42,12 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="content">
-            <figure>
-                <img src="../lesson6/images/preston1200.png" alt="Green field on a sunny day"
-                    srcset="../lesson6/images/preston400.png 560w,
-                            ../lesson6/images/preston800.png 1024w,
-                            ../lesson6/images/preston1200.png 1200w">
-            </figure>
+            <picture>
+                <source media="(min-width:64rem)" srcset="../lesson6/images/preston1200.png">
+                <source media="(min-width:35em)" srcset="../lesson6/images/preston800.png">
+                <source media="(max-width:560px)" srcset="../lesson6/images/preston400.png">
+                <img src="../lesson6/images/preston1200.png" alt="Green field on a sunny day">
+            </picture>
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <p><strong>Currently: </strong>Sunny</p>
