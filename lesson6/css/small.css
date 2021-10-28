@@ -128,6 +128,8 @@ main h2 {
 }
 
 footer {
+    max-width: 1160px;
+    margin: auto;
     background-color: rgb(177, 177, 177);
 }
 
@@ -161,6 +163,27 @@ footer p {
     background-color: black;
 }
 
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+section.image-gallery {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr;
+}
+
+figcaption {
+    padding: 2px;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+  }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
