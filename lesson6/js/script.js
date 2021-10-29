@@ -21,3 +21,6 @@ document.getElementById("date").innerHTML = dateTime
 if (weekDay !== "Friday") {
     document.getElementById("notification").style.display = "none"
 }
+
+
+
