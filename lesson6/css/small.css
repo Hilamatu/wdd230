@@ -117,7 +117,8 @@ main h2 {
 }
 
 .article img {
-    width: 300px;
+    max-width: 300px;
+    padding: 0px 0px 20px 20px;
 }
 
 .article{
