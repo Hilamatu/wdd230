@@ -1,0 +1,71 @@
+:root {
+    --back3: #628ca6;
+    --back2: #7fb9c2;
+	--border: rgb(39, 39, 39);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: rgb(44, 43, 43);
+	--zebraOdd: #e7f0ed;
+    --zebraEven: #e7ffed;
+    --font: rgb(233, 21, 21);
+}
+
+
+table, th, tr, td {
+    color: black
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--font);
+    font-size: .85rem;
+}
+
+table {
+    margin: 60px auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 30px var(--shadow);
+    border-collapse: collapse;
+    background-color: var(--back);
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+}
+
+th, tr, td {
+    padding: 5px;
+    border: 1px solid var(--borderlight);
+}
+
+tr:first-child th {
+    background-color: var(--back2);
+    font-size: 20px;
+    color: black;
+}
+
+tbody tr:nth-child(6) td:nth-child(3) {
+    background-color: var(--back3);
+    color: white;
+}
+
+tbody tr:nth-child(7) td:nth-child(1){
+    font-style: italic;
+}
+
+tbody tr:nth-child(9) td:nth-child(1){
+    font-size: 0.75rem;
+    background-color: var(--back2);
+}
+
+th {
+    background-color: var(--back3);
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebraOdd);
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebraEven);
+}
+
