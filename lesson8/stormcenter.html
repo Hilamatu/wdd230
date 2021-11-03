@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Town Weather page</title>
+    <meta name="description" content="Preston-5 Assignment for Hyrum Hilamatu in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../lesson6/css/small.css">
+    <link rel="stylesheet" href="../lesson6/css/medium.css">
+    <link rel="stylesheet" href="../lesson6/css/large.css">
+    <script defer src="../js/dates.js"></script>
+    <script defer src="../lesson6/js/script.js"></script>
+    <script defer src="../lesson7/js/main.js"></script>
+    <script defer src="../lesson7/js/gallery.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../lesson6/images/logo.jpeg" alt="Boarder Weather logo">
+
+        <div class="motto">
+            <h1>Boarder Weather</h1>
+            <p>Check the weather, ride forever!</p>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Reporter Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullName" minlength="5" required pattern="[a-zA-Z\s]"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                    required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Zip Code <input type="number" name="zipCode" placeholder="4300920"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
+
+                <div>Software Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP client</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option valeu="">Please Select &#9662;</option>
+                        <option value="software">Software Development</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info">Information Technology</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                    </select>
+                </label>
+
+                <label class="top">How Many Authors <input type="number" name="authors"></label>
+
+            </fieldset>
+
+            <input type="submit" value="Propose My Course" class="submitBtn">
+
+        </form>
+    </main>
+    <footer>
+        <section class="contact-information">
+            <img class="map" src="../lesson6/images/map.jpg" alt="Preston Map">
+            <div class="address">
+                <h3>Boarder Weather</h3>
+                <span><img src="../lesson6/images/gps.png" alt="gps icon">W Idaho 36,<br>Preston, ID 83263</span>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+                    <img src="../lesson5/images/facebook.png" alt="facebook icon"></a>
+                <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+                    <img class="mail" src="../lesson5/images/gmail.png" alt="gmail icon"></a>
+            </div>
+        </section>
+        <div class="footer-bar">
+            <p>&copy; <span id="copyrightyear"></span> Board weather - Hyrum Hilamatu - Japan - BYU online learning</p>
+            <p id="date"></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({ google: { families: ['Rock Salt'] } })
+    </script>
+</body>
+
+</html>
