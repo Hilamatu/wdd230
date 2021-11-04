@@ -36,22 +36,22 @@ th, tr, td {
     border: 1px solid var(--borderlight);
 }
 
-tr:first-child th {
+thead tr th{
     background-color: var(--back2);
     font-size: 20px;
     color: black;
 }
 
-tbody tr:nth-child(6) td:nth-child(3) {
+tbody tr:nth-child(5) td:nth-child(3) {
     background-color: var(--back3);
     color: white;
 }
 
-tbody tr:nth-child(7) td:nth-child(1){
+tbody tr:nth-child(6) td:nth-child(1){
     font-style: italic;
 }
 
-tbody tr:nth-child(9) td:nth-child(1){
+tfoot {
     font-size: 0.75rem;
     background-color: var(--back2);
 }
