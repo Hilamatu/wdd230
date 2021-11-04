@@ -115,5 +115,31 @@
     section.image-gallery {
         grid-template-columns: 1fr 1fr;
     }
+    /*-----------------Storm Center-----------------*/
+
+    form fieldset {
+        width: 450px;
+    }
+    
+    form legend {
+        font-size: 20px;
+    }
+    
+    label.comments textarea {
+       
+        max-width: 25rem;
+    }
+
+    form input.submitBtn {
+        max-width: 15rem
+    }
+
+    form label.top input, form label.top select {
+        max-width: 20rem;
+    }
+
+    form label.top, form div {
+        font-size: 15px;
+    }
 
 }

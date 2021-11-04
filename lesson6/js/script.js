@@ -22,5 +22,8 @@ if (weekDay !== "Friday") {
     document.getElementById("notification").style.display = "none"
 }
 
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
 
 
