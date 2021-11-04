@@ -253,6 +253,11 @@ form input.submitBtn {
     max-width: 20rem
 }
 
+form input.submitBtn:hover{
+    box-shadow: 0 0 50px #333;
+    cursor: pointer;
+}
+
 input:required:invalid {
 	background-color: #fdd;
 	color: #000;
@@ -319,6 +324,10 @@ button.return {
     padding: .75rem 1.5rem;
     width: 96%;
     max-width: 20rem;
+}
+button.return:hover {
+    box-shadow: 0 0 50px #333;
+    cursor: pointer;
 }
 
 
