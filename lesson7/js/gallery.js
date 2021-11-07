@@ -1,9 +1,14 @@
 let today = new Date(Date.now())
 
-const milisecondsToDays = 86400000;
+const milisecondsToDays = 8640000;
 
-
-const lastVisit = JSON.parse(window.localStorage.getItem('lastvisit'))
+let lastVisit;
+if ("lastVisit" in localStorage) {
+    lastVisit = JSON.parse(window.localStorage.getItem('lastvisit'));
+}
+else {
+    lastVisit = Date.now();
+}
 
 let lastVisitDate = new Date(lastVisit)
 

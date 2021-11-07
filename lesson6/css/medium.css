@@ -112,7 +112,7 @@
         height: auto;
     }
 
-    section.image-gallery {
+    div.image-gallery {
         grid-template-columns: 1fr 1fr;
     }
     /*-----------------Storm Center-----------------*/

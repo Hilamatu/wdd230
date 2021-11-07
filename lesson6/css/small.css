@@ -177,12 +177,12 @@ main {
     margin: auto;
 }
 
-figure img {
+figure picture source {
     width: 100%;
     height: auto;
 }
 
-section.image-gallery {
+div.image-gallery {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 1fr;
