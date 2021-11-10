@@ -16,6 +16,10 @@ fetch(requestURL)
             let h2 = document.createElement("h2");
             let birthDate = document.createElement("p")
             let birthPlace = document.createElement("p")
+            let image = document.createElement("img")
+
+            // Set a class with the order of the prophets + 1
+            card.setAttribute("class", `order${prophets[i].order}`)
 
             // Pass the value to h2 created above (usin template literals `` )
             h2.textContent = `${prophets[i].name} ${prophets[i].lastname}`;
@@ -26,9 +30,14 @@ fetch(requestURL)
             // Get and pass the birth place
             birthPlace.textContent = `Birth Place: ${prophets[i].birthplace}`;
 
+            // Set src and alt attributes to img element
+            image.setAttribute("src", prophets[i].imageurl)
+            image.setAttribute( "alt", `${prophets[i].name} ${prophets[i].lastname} - ${prophets[i].order}`)
+
             card.appendChild(h2);
             card.appendChild(birthDate);
             card.appendChild(birthPlace);
+            card.appendChild(image)
             
             // Append the information above to the div on HTML
             document.querySelector('div.cards').appendChild(card)
