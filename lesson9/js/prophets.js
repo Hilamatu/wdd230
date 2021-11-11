@@ -7,7 +7,7 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         const prophets = jsonObject['prophets']
-        console.table(jsonObject);
+
 
         //loop through every record and process them into their own 'cards' (HTML output), one at a time
         for (let i = 0; i < prophets.length; i++) {
