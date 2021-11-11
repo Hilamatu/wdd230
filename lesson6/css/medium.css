@@ -142,4 +142,11 @@
         font-size: 15px;
     }
 
+    /*-------------------home page css-----------------------*/
+
+    div.heroimage img{
+        width: 100%;
+    }
+
+
 }
