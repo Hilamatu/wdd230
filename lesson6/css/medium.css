@@ -146,7 +146,46 @@
 
     div.heroimage img{
         width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
 
+    section article div img {
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+       }
+
+    section article {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+    section p.motto {
+        font-size: 20px;
+    }
+      
+    article:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    article.town2 div.content {
+        text-align: center;
+        margin-right: 20px;
+    }
+
+
+    article.home-article img {
+    width: 50%;
+    float: right;
+    padding: 20px;
+    }
 
 }
