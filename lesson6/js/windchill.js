@@ -1,5 +1,7 @@
-let temp = parseInt(document.querySelector('#temp').innerHTML);
-let speed = parseInt(document.querySelector('#speed').innerHTML);
+let temp = parseInt(document.getElementById('temp'));
+let speed = parseInt(document.querySelector('#speed'));
+
+console.log(temp)
 
 let windChill;
 if (temp <= 50 && speed >= 3) {

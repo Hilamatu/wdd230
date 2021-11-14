@@ -8,6 +8,7 @@ fetch(apiURL)
 
         // Set the current temperature to <span> element in the document
         document.getElementById('current-temp').textContent = jsObject.main.temp;
+        
 
         // Use a variable to store the image address which needs to be concatenated together given the API icon code value result
         // This icon is just a preset code value that corresponds to OpenWeatherMap's library of images which is found at 
