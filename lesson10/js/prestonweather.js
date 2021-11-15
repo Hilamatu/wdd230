@@ -83,6 +83,13 @@ fetch(forecastURL)
         document.getElementById("img3").setAttribute("src", `${imageLink}${fiveDays[2].weather[0].icon}.png`)
         document.getElementById("img4").setAttribute("src", `${imageLink}${fiveDays[3].weather[0].icon}.png`)
         document.getElementById("img5").setAttribute("src", `${imageLink}${fiveDays[4].weather[0].icon}.png`)
+
+        // Set the description for each day
+        document.getElementById("img1").setAttribute("alt", fiveDays[0].weather[0].description)
+        document.getElementById("img2").setAttribute("alt", fiveDays[1].weather[0].description)
+        document.getElementById("img3").setAttribute("alt", fiveDays[2].weather[0].description)
+        document.getElementById("img4").setAttribute("alt", fiveDays[3].weather[0].description)
+        document.getElementById("img5").setAttribute("alt", fiveDays[4].weather[0].description)
     
 
     })
