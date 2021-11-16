@@ -11,7 +11,9 @@
     .content img{
         width: 100%;
     }
-
+    .forecast {
+        display: block;
+    }
     .flex {
         display: flex;
         /* flex-direction: row; */
