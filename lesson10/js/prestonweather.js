@@ -70,11 +70,11 @@ fetch(forecastURL)
 
 
         // Set the temperature
-        document.getElementById("data1").textContent = fiveDays[0].main.temp
-        document.getElementById("data2").textContent = fiveDays[1].main.temp
-        document.getElementById("data3").textContent = fiveDays[2].main.temp
-        document.getElementById("data4").textContent = fiveDays[3].main.temp
-        document.getElementById("data5").textContent = fiveDays[4].main.temp
+        document.getElementById("data1").textContent = `${fiveDays[0].main.temp}°F`
+        document.getElementById("data2").textContent = `${fiveDays[1].main.temp}°F`
+        document.getElementById("data3").textContent = `${fiveDays[2].main.temp}°F`
+        document.getElementById("data4").textContent = `${fiveDays[3].main.temp}°F`
+        document.getElementById("data5").textContent = `${fiveDays[4].main.temp}°F`
 
         // Set the weather icon
         const imageLink = "https://openweathermap.org/img/w/";
