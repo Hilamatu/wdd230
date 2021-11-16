@@ -1,5 +1,5 @@
 // Get the current weather
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=39118d2fb9fc18f735a898398fe6dfa3"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=39118d2fb9fc18f735a898398fe6dfa3"
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -35,7 +35,7 @@ fetch(apiURL)
     });
 
 // Get the forecast for 5 days
-const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=021e6802b9ec4c17d8adb058949ab7c7"
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=021e6802b9ec4c17d8adb058949ab7c7"
 
 fetch(forecastURL)
     .then((response) => response.json())
