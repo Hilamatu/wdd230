@@ -27,3 +27,5 @@ function adjustRating(rating) {
 }
 
 
+const copyrightyear = document.getElementById("copyrightyear");
+copyrightyear.textContent = new Date().getFullYear();
