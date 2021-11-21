@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <meta name="description" content="Gallery Assignment for Hyrum Hilamatu in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../lesson11/css/small.css">
+    <link rel="stylesheet" href="../lesson11/css/medium.css">
+    <link rel="stylesheet" href="../lesson11/css/large.css">
+    <script defer src="../lesson11/js/gallery.js"></script>  
+</head>
+<body>
+    <header>
+        <img class="logo" src="../lesson11/images/logo.jpeg" alt="Boarder Weather logo">
+        
+        <div class="motto">
+            <h1>Boarder Weather</h1>
+            <p>Check the weather, ride forever!</p>
+        </div>   
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../lesson11/index.html">Home</a></li>
+            <li><a href="../lesson11/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="../lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="gallery">
+        <h1>Weather Gallery</h1>
+        <p><span id="days"></span> days from last visit!</p>
+        <div class="image-gallery">
+            <figure>
+                <img src="../lesson11/images/placeholder.png" data-src="../lesson11/images/large/sunny1200.jpg" alt="Sunny day">
+                <figcaption>Beautiful sunny day for skateboarding</figcaption>
+            </figure>
+            <figure>
+                <img src="../lesson11/images/placeholder.png" data-src="../lesson11/images/large/rain1200.jpg" alt="Someone holding an umbrella">
+                <figcaption>It is not a good idea skateboarding in the rain</figcaption>
+            </figure>
+            <figure>
+                <img src="../lesson11/images/placeholder.png" data-src="../lesson11/images/large/lightning1200.jpg" alt="Strong Lightning">
+                <figcaption>Lightning from last night</figcaption>
+            </figure>
+            <figure>
+                <img src="../lesson11/images/placeholder.png" data-src="../lesson11/images/large/rainbow1200.jpg" alt="Beautiful rainboe in the sky">
+                <figcaption>Always comes a rainbow after every storm</figcaption>
+            </figure>
+            <figure>
+                <img src="../lesson11/images/placeholder.png" data-src="../lesson11/images/large/snow1200.jpg" alt="Snowing at night">
+                <figcaption>Snowing at night</figcaption>
+            </figure>
+            <figure>
+                <img src="../lesson11/images/placeholder.png" data-src="../lesson11/images/large/momiji1200.jpg" alt="Tree of Momiji turning into red">
+                <figcaption>Beautiful day to appreciate the season changing</figcaption>
+            </figure>
+            <figure>
+                <img src="../lesson11/images/placeholder.png" data-src="../lesson11/images/large/sunset1200.jpg" alt="Sunset with a storm comming">
+                <figcaption>Beautiful sunset but it looks like there is a storm comming</figcaption>
+            </figure>
+            <figure>
+                <img src="../lesson11/images/placeholder.png" data-src="../lesson11/images/large/sunsetsea1200.jpg" alt="Sunset at the beach">
+                <figcaption>Good weather to watch the sunset after riding your Board</figcaption>
+            </figure>
+            <figure>
+                <img src="../lesson11/images/placeholder.png" data-src="../lesson11/images/large/sunnysnow1200.jpg" alt="Sunny day with snow">
+                <figcaption>Beautiful sunny day. Go get your board and lets snowboarding</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <section class="contact-information">
+            <img class="map" src="../lesson11/images/map.jpg" alt="Preston Map">
+            <div class="address">
+                <h3>Boarder Weather</h3>
+                <span><img src="../lesson11/images/gps.png" alt="gps icon">W Idaho 36,<br>Preston, ID 83263</span>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+                    <img src="../lesson11/images/facebook.png" alt="facebook icon"></a>
+                <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+                    <img class="mail" src="../lesson11/images/gmail.png" alt="gmail icon"></a>
+            </div>
+        </section>            
+        <div class="footer-bar">
+            <p>&copy; <span id="copyrightyear"></span> Board weather - Hyrum Hilamatu - Japan - BYU online learning</p>
+            <p id="date"></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+         WebFont.load({google: {families: ['Rock Salt']}})
+    </script>    
+</body>
+</html>

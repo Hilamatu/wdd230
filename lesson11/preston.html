@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Town Weather page</title>
+    <meta name="description" content="Preston page Assignment for Hyrum Hilamatu in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../lesson11/css/small.css">
+    <link rel="stylesheet" href="../lesson11/css/medium.css">
+    <link rel="stylesheet" href="../lesson11/css/large.css"> 
+    <script defer src="../lesson11/js/script.js"></script>
+    <script defer src="../lesson11/js/prestonweather.js"></script>
+
+</head>
+<body>
+    <div id ="notification" class="pancake">
+        <p><strong>Saturday = </strong>Preston Pancakes in the Park!<br>9:00
+        a.m Saturday at the city park.</p>
+    </div>
+    <header>
+        <img class="logo" src="../lesson11/images/logo.jpeg" alt="Boarder Weather logo">
+        
+        <div class="motto">
+            <h1>Boarder Weather</h1>
+            <p>Check the weather, ride forever!</p>
+        </div>   
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../lesson11/index.html">Home</a></li>
+            <li class="active"><a href="../lesson11/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson11/gallery.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="content">
+            <picture>
+                <source media="(min-width:64rem)" srcset="../lesson11/images/skate1200.jpg">
+                <source media="(min-width:35em)" srcset="../lesson11/images/skate800.jpg">
+                <source media="(max-width:560px)" srcset="../lesson11/images/skate400.jpg">
+                <img src="../lesson6/images/preston1200.png" alt="Green field on a sunny day">
+            </picture>
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p><strong>Currently: </strong><span id="current"></span></p>
+                <p><strong>High: </strong><span id="temp"></span>°F</p>
+                <p><strong>Wind Chill: </strong><span id="windChill"></span></p>
+                <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
+                <p><strong>Wind Speed: </strong><span id="speed"></span> s mph</p>
+            </section>
+        </div> 
+        <div class="forecast">
+            <h3>5 days forecast</h3>
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head" id="weekday1"></span>
+                    <img id="img1" src="../lesson11/images/placeholder.png" alt="placeholder for weather information">
+                    <span class="data" id="data1"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="weekday2"></span>
+                    <img id="img2" src="../lesson11/images/placeholder.png" alt="placeholder for weather information" >
+                    <span class="data" id="data2"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="weekday3"></span>
+                    <img id="img3" src="../lesson11/images/placeholder.png" alt="placeholder for weather information" >
+                    <span class="data" id="data3"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="weekday4"></span>
+                    <img id="img4" src="../lesson11/images/placeholder.png" alt="placeholder for weather information" >
+                    <span class="data" id="data4"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="weekday5"></span>
+                    <img id="img5" src="../lesson11/images/placeholder.png" alt="placeholder for weather information">
+                    <span class="data" id="data5"></span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <h3>Short History of skateboarding</h3>
+            
+            <p> <img src="../lesson11/images/skater.jpg" alt="Skater doing a trick">
+                Skateboarding was first invented in the 1950s in California. It’s tricky to 
+                pin down the very first skateboard, but it was a sport created by surfers who 
+                wanted something to do when the waves were low. In the US it grew in popularity 
+                until it peaked around 1963, before a crash in the market in 1965. Skateboarding 
+                was seen as a fad that had run its course.
+                This changed in the early 1970s with the creation of urethane skateboard wheels, 
+                rather than the rickety old metal or wooden wheels on the original boards. The moulded 
+                wheels suddenly made it much easier to skate over less-than-perfect terrain.
+                It evolved and finally in 2020 it was finally included in the olympics!
+            </p>
+        </div>
+    </main>
+    <footer>
+        <section class="contact-information">
+            <img class="map" src="../lesson11/images/map.jpg" alt="Preston Map">
+            <div class="address">
+                <h3>Boarder Weather</h3>
+                <span><img src="../lesson11/images/gps.png" alt="gps icon">W Idaho 36,<br>Preston, ID 83263</span>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+                    <img src="../lesson11/images/facebook.png" alt="facebook icon"></a>
+                <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+                    <img class="mail" src="../lesson11/images/gmail.png" alt="gmail icon"></a>
+            </div>
+        </section>            
+        <div class="footer-bar">
+            <p class="source">Weather Data Source: <a class="openweather" href="https://openweathermap.org">OpenWeatherMap</a></p>
+            <p>&copy; <span id="copyrightyear"></span> Board weather - Hyrum Hilamatu - Japan - BYU online learning</p>
+            <p id="date"></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+         WebFont.load({google: {families: ['Rock Salt']}})
+    </script>    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index (Home Page</title>
+    <meta name="description" content="Index Assignment for Hyrum Hilamatu in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../lesson11/css/small.css">
+    <link rel="stylesheet" href="../lesson11/css/medium.css">
+    <link rel="stylesheet" href="../lesson11/css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script defer src="../lesson11/js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../lesson11/images/logo.jpeg" alt="Boarder Weather logo">
+        <div class="motto">
+            <h1>Boarder Weather</h1>
+            <p>Check the weather, ride forever!</p>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="../lesson11/index.html">Home</a></li>
+            <li><a href="../lesson11/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson11/gallery.html">Gallery</a></li>
+
+        </ul>
+    </nav>
+    <main class="home">
+        <div class="heroimage">
+            <picture>
+                <source media="(min-width:64rem)" srcset="../lesson11/images/snowhero1200.jpg">
+                <source media="(min-width:35em)" srcset="../lesson11/images/snowhero800.jpg">
+                <source media="(max-width:560px)" srcset="../lesson11/images/snowhero400.jpg">
+                <img src="../lesson9/images/snowhero1200.jpg" alt="Snowboard Powder">
+            </picture>
+        </div>
+        <section class="townCard">
+            <h2>Our Towns</h2>
+        </section>
+        <article class="home-article">
+            <h2>Snowboard History</h2>
+            <picture>
+                <source media="(min-width:64rem)" srcset="../lesson11/images/snowboarding1200.jpg">
+                <source media="(min-width:64em)" srcset="../lesson11/images/snowboarding800.jpg">
+                <source media="(max-width:560px)" srcset="../lesson11/images/snowboarding400.jpg">
+                <img src="../lesson9/images/snowboarding1200.jpg" alt="Snowboard Powder">
+            </picture>
+            <p>Modern snowboarding began in 1965 when Sherman Poppen, an engineer in Muskegon, Michigan, invented a 
+                toy for his daughters by fastening two skis together and attaching a rope to one end so he would have 
+                some control as they stood on the board and glided downhill. Dubbed the "snurfer" (combining snow and 
+                surfer) by his wife Nancy, the toy proved so popular among his daughters' friends that Poppen licensed 
+                the idea to a manufacturer, Brunswick Corporation, that sold about a million snurfers over the next 
+                decade. And, in 1966 alone, over half a million snurfers were sold.<br><br>
+
+                In February 1968, Poppen organized the first snurfing competition at a Michigan ski resort that 
+                attracted enthusiasts from all over the country.[6] One of those early pioneers was Tom Sims, a 
+                devotee of skateboarding (a sport born in the 1950s when kids attached roller skate wheels to small 
+                boards that they steered by shifting their weight). As an eighth grader in Haddonfield, New Jersey, 
+                in the 1960s, Sims crafted a snowboard in his school shop class by gluing carpet to the top of a piece
+                 of wood and attaching aluminum sheeting to the bottom.[7] He produced commercial snowboards in the 
+                 mid-70s.<br><br>
+                 Also during this same period, in 1977, Jake Burton Carpenter, a Vermont native who had enjoyed 
+                 snurfing since the age of 14, impressed the crowd at a Michigan snurfing competition with bindings 
+                 he had designed to secure his feet to the board. That same year, he founded Burton Snowboards in 
+                 Londonderry, Vermont. The "snowboards" were made of wooden planks that were flexible and had 
+                 water ski foot traps. Very few people picked up snowboarding because the price of the board was 
+                 considered too high at $38 and were not allowed on many ski hills, but eventually Burton would 
+                 become the biggest snowboarding company in the business. Burton's early designs for boards 
+                 with bindings became the dominant features in snowboarding.<br><br>
+                And then, the snowboarding that we all know today begin to take form and at the 1998 Winter Olympic Games in Nagano, Japan, 
+                Snowboarding became an official Olympic event.
+            </p>
+        </article>
+        
+    </main>
+
+    <footer>
+        <section class="contact-information">
+            <img class="map" src="../lesson11/images/map.jpg" alt="Preston Map">
+            <div class="address">
+                <h3>Boarder Weather</h3>
+                <span><img src="../lesson11/images/gps.png" alt="gps icon">W Idaho 36,<br>Preston, ID 83263</span>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+                    <img src="../lesson11/images/facebook.png" alt="facebook icon"></a>
+                <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+                    <img class="mail" src="../lesson11/images/gmail.png" alt="gmail icon"></a>
+            </div>
+        </section>
+        <div class="footer-bar">
+            <p>&copy; <span id="copyrightyear"></span> Board weather - Hyrum Hilamatu - Japan - BYU online learning</p>
+            <p id="date"></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({ google: { families: ['Rock Salt'] } })
+    </script>
+</body>
+
+</html>
