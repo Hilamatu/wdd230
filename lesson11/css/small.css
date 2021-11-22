@@ -168,15 +168,11 @@ footer p {
 
 .footer-bar {
     background-color: black;
+    padding: 20px;
 }
 
 .openweather {
     color: red;
-}
-
-.source {
-    padding-top: 20px;
-
 }
 
 /*-------------------- Gallery Style -------------*/
