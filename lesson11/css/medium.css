@@ -93,7 +93,7 @@
     }
 
     .article img {
-        width: 250px;
+        width: 200px;
         float: right;
         padding: 0px 0px 20px 20px;
     }
@@ -112,11 +112,7 @@
     .weathersummary h3 {
         font-size: 15px;
     }
-    
-    figure img {
-        width: 100%;
-        height: auto;
-    }
+
 
     div.image-gallery {
         grid-template-columns: 1fr 1fr;
