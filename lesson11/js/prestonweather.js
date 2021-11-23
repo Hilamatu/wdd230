@@ -94,6 +94,32 @@ fetch(forecastURL)
 
     })
 
+// Getting information from JSON
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json"
+// Fetching to get the events 
+fetch(requestURL)
+    .then(function (response) {
+    return response.json();
+    })
+
+    .then(function (jsonObject) {
+        // Create a list from JSON file
+        const towns = jsonObject ["towns"]
+        getInformation(towns, 6)
+        
+    });
+
+// Function that will iterate through the Towns list and get events of that town
+function getInformation (list, index){
+    const events = list[index].events
+    for (let i = 0; i < events.length; i ++) {
+        let event = document.createElement("p")
+        event.textContent = events[i]
+        document.querySelector("section.events").appendChild(event)
+    }
+
+}
+
 // Function to hide and show the menu
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("hide")

@@ -94,34 +94,38 @@ fetch(forecastURL)
 
     })
 
+
+// Get the events from towns list
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json"
+// Fetching to get the events 
+fetch(requestURL)
+    .then(function (response) {
+    return response.json();
+    })
+
+    .then(function (jsonObject) {
+        // Create a list from JSON file
+        const towns = jsonObject ["towns"]
+        getInformation(towns, 0)
+        
+    });
+
+
+// Function that will iterate through the Towns list and get events of that town
+function getInformation (list, index){
+    const events = list[index].events
+    for (let i = 0; i < events.length; i ++) {
+        let event = document.createElement("p")
+        event.textContent = events[i]
+        document.querySelector("section.events").appendChild(event)
+    }
+
+}
+
 // Checking the day of the week to announce the pancakes 
 
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("hide")
-}
-
-
-
-let newDate = new Date();
-
-let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-let months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-
-let weekDay = days[newDate.getDay()];
-let month = months[newDate.getMonth()];
-let year = newDate.getFullYear();
-let date = newDate.getDate();
-
-let dateTime = weekDay + "," + " " + date + " " + month + " " + year;
-
-document.getElementById("date").innerHTML = dateTime
-
-if (weekDay !== "Friday") {
-    document.getElementById("notification").style.display = "none"
-}
-
-function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
 }
 
 
