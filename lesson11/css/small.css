@@ -181,9 +181,12 @@ main {
     margin: auto;
 }
 
+
 figure img {
     width: 100%;
     height: auto;
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
 
 div.image-gallery {
@@ -197,6 +200,16 @@ figcaption {
     text-align: center;
     font-family: 'Rock Salt', cursive;
   }
+
+div.image-gallery figure img[data-src]{
+    filter: blur(0.2em);
+}
+
+div.image-gallery figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
 
 
 
