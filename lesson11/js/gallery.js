@@ -65,3 +65,8 @@ images.forEach(image => {
 //  Getting the current year and passing it to the copyright
 const copyrightyear = document.getElementById("copyrightyear");
 copyrightyear.textContent = new Date().getFullYear();
+
+// Function to hide and show the menu
+function toggleMenu(){
+    document.getElementById("primaryNav").classList.toggle("hide")
+}

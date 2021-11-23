@@ -94,14 +94,13 @@ fetch(forecastURL)
 
     })
 
-// Checking the day of the week to announce the pancakes 
-
+// Function to hide and show the menu
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("hide")
 }
 
 
-
+// Checking the day of the week to announce the pancakes
 let newDate = new Date();
 
 let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
