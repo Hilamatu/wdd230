@@ -381,3 +381,20 @@ article.home-article img {
     display: block;
 
 }
+
+/* ------------------- Events section--------------------- */
+
+section.events {
+    background-color: rgb(179, 178, 178);
+    padding: 0 20px 20px 20px;
+    box-shadow: 0 0 50px black;
+    margin-top: 50px;
+}
+
+section.events p{
+    font-size: 18px;
+}
+
+section.events h3 {
+    text-decoration: 3px underline;
+}
