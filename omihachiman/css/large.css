@@ -1,0 +1,57 @@
+@media only screen and (min-width: 64rem) {
+        
+    nav button {
+        display: none;
+        }
+
+    nav ul.hide{
+        display: block;
+    }
+    nav ul li {
+        float: left;
+    } 
+    
+    nav ul li a {
+        border: none;
+        font-size: 20px;
+    }
+    main {
+        clear: left;
+    }
+    main section.advertisement {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main section.advertisement h3{
+        grid-column: 1/4;
+    }
+    div.partik {
+        grid-column: 1;
+    }
+
+    div.hachimanbori {
+        grid-column: 2;
+    }
+
+    div.omisampa {
+        grid-column: 3;
+    }
+    /* ---------------------------------------City CSS---------------------------------- */
+    
+    thead tr th{
+        font-size: 20px;
+    }
+
+    tbody tr {
+        font-size: 20px;
+    }
+
+    tfoot {
+        font-size: .90rem;
+    }
+    section.demography {
+        float:right;
+        margin: 60px;
+    }
+
+}

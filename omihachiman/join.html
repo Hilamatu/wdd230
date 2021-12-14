@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omihachiman Chamber Of Commerce Join page</title>
+    <meta name="description" content="Final project for Hyrum Hilamatu in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../omihachiman/css/normalize.css">
+    <link rel="stylesheet" href="../omihachiman/css/small.css">
+    <link rel="stylesheet" href="../omihachiman/css/medium.css">
+    <link rel="stylesheet" href="../omihachiman/css/large.css">
+    <script defer src="../omihachiman/js/join.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="" alt="omihachiman commerce logo">
+        <div class="motto">
+            <h1>Omihachiman Chamber Of Commerce</h1>
+            <p>A great place to live, visit and come back to. This is Omihachiman!</p>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../omihachiman/index.html">Home</a></li>
+            <li><a href="../omihachiman/city.html">City</a></li>
+            <li class="active"><a href="../omihachiman/join.html">Join</a></li>
+            <li><a href="../omihachiman/directory.html">Directory</a></li>
+            <li><a href="../omihachiman/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="join">
+        <form method="get" action="../omihachiman/welcome.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" minlength="3" pattern="[A-Za-z ]+" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" minlength="3" pattern="[A-Za-z ]+" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="youremail@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="###########"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business Name* <input type="text" name="fname" minlength="3" pattern="[A-Za-z ]+" required></label>
+                <label class="top">Zip Code <input type="number" name="zipCode" placeholder="4300920"></label>
+                <label class="top">Address <input type="tex" name="address"></label>
+                <label class="top">Website <input type="url" name="website"></label>
+                <label class="comments">Decription <textarea name="comments"></textarea></label>
+                
+                <div>Membership Level</div>
+                <label class="sbs"><input type="radio" name="membership" value="Non-profit"> Non-profit ($100) - Only listing on directory</label>
+                <label class="sbs"><input type="radio" name="membership" value="Bronze"> Bronze ($200) - Directory and business trainning</label>
+                <label class="sbs"><input type="radio" name="membership" value="Silver"> Silver ($400) - Directory, trainning and social media posts</label>
+                <label class="sbs"><input type="radio" name="membership" value="Gold"> Gold ($1000) - All the perks plus sponsorships with levels of advertising</label>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="comments">Comments<textarea name="comments"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="join" name="submissionButton" class="submitBtn">
+
+        </form>
+    </main>
+    <footer>
+        <section class="contact-information">
+            <div class="address">
+                <h3>Omihachiman Chamber of Commerce</h3>
+                <img class="map" src="../omihachiman/images/map.png" alt="Commerce Map">
+                <p>Shiga-ken,<br>Omihachiman,<br>Anyoji-cho, 4-35<br>
+                Tel: +81 90-1278-3684</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+                    <img src="../omihachiman/images/facebook.png" alt="facebook icon"></a>
+                <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+                    <img class="mail" src="../omihachiman/images/gmail.png" alt="gmail icon"></a>
+            </div>
+        </section>            
+        <div class="footer-bar">
+            <p class="source">Weather Data Source:<span><a class="openweather" href="https://openweathermap.org">OpenWeatherMap</a></span></p>
+            <p class="source">Content source:<span><a href="https://ja.wikipedia.org/wiki/近江八幡市">Wikipedia</a></span></p>
+            <p>&copy; <span id="copyrightyear"></span> Omihachiman Chamber of Commerce - Hyrum Hilamatu - Japan - BYU online learning</p>
+            <p class="lastmodified">Last updated: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+         WebFont.load({google: {families: ['Lobster']}})
+    </script>
+</body>
+</html>

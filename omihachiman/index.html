@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omihachiman Chamber Of Commerce</title>
+    <meta name="description" content="Final project for Hyrum Hilamatu in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../omihachiman/css/normalize.css">
+    <link rel="stylesheet" href="../omihachiman/css/small.css">
+    <link rel="stylesheet" href="../omihachiman/css/medium.css">
+    <link rel="stylesheet" href="../omihachiman/css/large.css">
+    <script defer src="../omihachiman/js/home.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="" alt="omihachiman commerce logo">
+        <div class="motto">
+            <h1>Omihachiman Chamber Of Commerce</h1>
+            <p>A great place to live, visit and come back to. This is Omihachiman!</p>
+        </div>
+    </header>
+    <div class="hero">
+        <picture>
+            <source media="(min-width:64rem)" srcset="../omihachiman/images/large/hachimanbori-large.jpeg">
+            <source media="(min-width:35em)" srcset="../omihachiman/images/medium/hachimanbori-medium.jpeg">
+            <source media="(max-width:560px)" srcset="../omihachiman/images/small/hachimanbori-small.jpeg">
+            <img class="hero-image" src="../omihachiman/images/large/hachimanbori-large.jpeg" alt="Hachimanbori at night">
+        </picture> 
+        <section id="weather-alert" class="off">
+            <h2>Weather alert!</h2>
+            <h3 id="alert">Snow Tempest</h3>
+            <h4>From<span id="start"></span> to <span id="end"></span></h4>
+            <p id="description"></p>            
+        </section>      
+    </div>
+    
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="../omihachiman/index.html">Home</a></li>
+            <li><a href="../omihachiman/city.html">City</a></li>
+            <li><a href="../omihachiman/join.html">Join</a></li>
+            <li><a href="../omihachiman/directory.html">Directory</a></li>
+            <li><a href="../omihachiman/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="events">
+            <h3>Upcoming Events!</h3>
+            <h4>Sagicho Fire Festival</h4>
+            <p>March, 13-14, 2022</p>
+            <picture>
+                <source media="(min-width:64rem)" srcset="../omihachiman/images/large/sagicholarge.jpeg">
+                <source media="(min-width:35em)" srcset="../omihachiman/images/medium/sagichomedium.jpeg">
+                <source media="(max-width:560px)" srcset="../omihachiman/images/small/sagichosmall.jpeg">
+                <img class="hero-image" src="../omihachiman/images/large/sagicholarge.jpeg" alt="Sagicho festival">
+            </picture> 
+            <picture class="fire">
+                <source media="(min-width:64rem)" srcset="../omihachiman/images/sagicho-fire.jpeg">
+                <source media="(min-width:35em)" srcset="../omihachiman/images/sagicho-fire.jpeg">
+                <img class="hero-image" src="../omihachiman/images/sagicho-fire.jpeg" alt="Sagicho festival">
+            </picture>
+            <a href="https://www.sagicho.net">Official Webpage</a>
+        </section>
+        <section class="weather-information">
+            <div class="weather">
+                <h2>Weather information</h2>
+                <div class="current">
+                    <h3>Weather Summary</h3>
+                        <p><strong>Currently: </strong><span id="current"></span></p>
+                        <p><strong>Temperature: </strong><span id="temp"></span>°F</p>
+                        <p><strong>Humidity: </strong><span id="humidity"></span>%</p>
+                </div>
+            </div>
+            <div class="forecast">
+                <h3>3 days forecast</h3>
+                <div class="flex">
+                    <div class="flex-col">
+                        <span class="col-head" id="weekday1"></span>
+                        <img id="img1" src="../omihachiman/images/placeholder.png" alt="placeholder for weather information">
+                        <span class="data" id="data1"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head" id="weekday2"></span>
+                        <img id="img2" src="../omihachiman/images/placeholder.png" alt="placeholder for weather information" >
+                        <span class="data" id="data2"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head" id="weekday3"></span>
+                        <img id="img3" src="../omihachiman/images/placeholder.png" alt="placeholder for weather information" >
+                        <span class="data" id="data3"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advertisement">
+            <h3>Know our local business</h3>
+            <div class="partik">
+                <h3>Partik</h3>
+                <p>Do you like Indian food? Would you like to try Indian food?
+                    <br><strong>Cheap, Delicious, Well-attended,<br>This is Partik!!</strong>
+                </p>
+                <img src ="../omihachiman/images/placeholder.png" data-src="../omihachiman/images/cheese.jpeg" alt="cheese nan">
+                <a href="https://hitosara.com/0006046354/">Make a reservation!!</a>
+            </div>
+            <div class="hachimanbori">
+                <h3>Hachiman-Bori</h3>
+                <p>Do you like the Japanses culture? Do you like the nature?
+                    Would like to make a tour in a living museum? <br>
+                    You can have this in Hachiman Bori! A canal that was a mainstay in regional economics and 
+                    transportation until the start of the Showa period (1926 - 1989). White-walled storehouses 
+                    and old houses stand along the canal, clearly imparting the atmosphere of the area at its peak.
+                    
+                </p>
+                <img src="../omihachiman/images/placeholder.png" data-src="../omihachiman/images/hachiman.jpeg" alt="Hachiman Bori">
+                <a href="https://www.omi8.com/omihachiman/local-history/hachimanbori/">Visit the site!!</a>
+            </div>
+            <div class="omisampa">
+                <h3>Omisampa</h3>
+                <p>Feel as you were in Brazil eating brazilian food in a brazilian environment!</p>
+                <img src="../omihachiman/images/placeholder.png" data-src="../omihachiman/images/omisampa.jpeg" alt="omisampa restaurant">
+                <a href="https://www.facebook.com/profile.php?id=100074888106894">Find them on facebook</a>
+            </div>
+        </section>
+        <section class="purpose">
+            <h2>Our purpose and goals</h2>
+            <p>The Omihachiman Chamber of Commerce was organized with the intent to promote the city and the local 
+                business by presenting the places you can visit in Omihachiman, the history of the city, its 
+                importance to Shiga province and, of course, the local business of our city. <br>
+                Our goal is to increase the number of visitors to our city and consequently promote the local 
+                business increasing their profits and attract more investors and new business to our city.
+            </p>
+            <a href="../omihachiman/join.html">Join Now</a>
+
+        </section>
+    </main>
+    <footer>
+        <section class="contact-information">
+            <div class="address">
+                <h3>Omihachiman Chamber of Commerce</h3>
+                <img class="map" src="../omihachiman/images/map.png" alt="Commerce Map">
+                <p>Shiga-ken,<br>Omihachiman,<br>Anyoji-cho, 4-35<br>
+                Tel: +81 90-1278-3684</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+                    <img src="../omihachiman/images/facebook.png" alt="facebook icon"></a>
+                <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+                    <img class="mail" src="../omihachiman/images/gmail.png" alt="gmail icon"></a>
+            </div>
+        </section>            
+        <div class="footer-bar">
+            <p class="source">Weather Data Source:<span><a class="openweather" href="https://openweathermap.org">OpenWeatherMap</a></span></p>
+            <p>&copy; <span id="copyrightyear"></span> Omihachiman Chamber of Commerce - Hyrum Hilamatu - Japan - BYU online learning</p>
+            <p class="lastmodified">Last updated: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+         WebFont.load({google: {families: ['Lobster']}})
+    </script>
+</body>
+</html>

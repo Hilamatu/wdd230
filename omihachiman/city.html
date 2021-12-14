@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omihachiman Chamber Of Commerce city page</title>
+    <meta name="description" content="Final project for Hyrum Hilamatu in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../omihachiman/css/normalize.css">
+    <link rel="stylesheet" href="../omihachiman/css/small.css">
+    <link rel="stylesheet" href="../omihachiman/css/medium.css">
+    <link rel="stylesheet" href="../omihachiman/css/large.css">
+    <script defer src="../omihachiman/js/city.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="" alt="omihachiman commerce logo">
+        <div class="motto">
+            <h1>Omihachiman Chamber Of Commerce</h1>
+            <p>A great place to live, visit and come back to. This is Omihachiman!</p>
+        </div>
+    </header>
+    <div class="hero">
+        <picture>
+            <source media="(min-width:64rem)" srcset="../omihachiman/images/large/omihachimanlarge.jpeg">
+            <source media="(min-width:35em)" srcset="../omihachiman/images/medium/omihachimanmedium.jpeg">
+            <source media="(max-width:560px)" srcset="../omihachiman/images/small/omihachimansmall.jpeg">
+            <img class="hero-image" src="../omihachiman/images/large/omihachimanlarge.jpeg" alt="Hachimanbori at night">
+        </picture>     
+    </div>
+    
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#8801; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../omihachiman/index.html">Home</a></li>
+            <li class="active"><a href="../omihachiman/city.html">City</a></li>
+            <li><a href="../omihachiman/join.html">Join</a></li>
+            <li><a href="../omihachiman/directory.html">Directory</a></li>
+            <li><a href="../omihachiman/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="city">
+        <section class="demography">
+            <h2>Demographic information</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="2">Oumihachiman Demography</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                    <tr>
+                        <td>Male</td>
+                        <td>40,410</td>
+                    </tr>
+                    <tr>
+                        <td>Female</td>
+                        <td>41,813</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>82,223</td>
+                    </tr>
+                    <tr>
+                        <td>Household</td>
+                        <td>34,387</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Source: <a href="https://www.city.omihachiman.lg.jp/material/files/group/105/R202jinkou.pdf">Omihachiman prefecture</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section class="history">
+            <h2>History of Omihachiman</h2>
+            <p>Ōmihachiman is part of ancient Ōmi Province and was originally a post station that developed around 
+                Musa-juku on the Tōsandō (later the Nakasendō) highway connecting Heian-kyō with the eastern provinces
+                . During the Sengoku period, the warlord Oda Nobunaga built Azuchi Castle in the hills on the border 
+                with Higashiōmi. Under Toyotomi Hidetsugu the center shirted to a castle town at the base of 
+                Hachimanyama Castle, which attracted many merchants ("Ōmi shōnin"), especially after the destruction 
+                of Azuchi Castle. Former merchant's residences and a canal used for transport are preserved in an old 
+                city area, designated a Preservation District for Groups of Traditional Buildings and an Important 
+                Cultural Landscape.<br><br>
+
+                The town of Hachiman was established with Gamō District, Shiga with the creation of the modern 
+                municipalities system on April 1, 1889. In 1905, an American architect William Merrell Vories came to 
+                Ōmihachiman as an English language teacher at commercial high school. Two years later he resigned the 
+                original work, but he remained in Ōmihachiman and spent most of his productive life here. He handed 
+                down western-style buildings, a pharmaceutical company, an educational foundation and a hospital to the 
+                city. The town expanded by annexing the neighboring villages of Utsuro in 1933 and Shima in 1951. On 
+                March 31, 1954, Hachiman merged with the villages of Okayama, Kanada, Kirihara and Mabuchi to form the 
+                city of Ōmihachiman. The name was changed from "Hachiman" to "Ōmihachiman" to avoid confusion with the 
+                then existing city of Yahata in Fukuoka Prefecture, as both "Hachiman" and "Yawata" are written in the 
+                same kanji characters. On March 21, 2010, the town of Azuchi was merged into Ōmihachiman.</p>
+        </section>
+        <section class="places">
+            <h2>Places to visit!</h2>
+            <div class="azuchi">
+                <h3>Azuchi castle's ruins</h3>
+                <img src="../omihachiman/images/placeholder.png" data-src ="../omihachiman/images/ruins.jpeg" alt="Azuchi castle's ruins">
+                <img src="../omihachiman/images/placeholder.png" data-src="../omihachiman/images/drawing.jpeg" alt="Azuchi castle's drawing">
+                <p>If you are a fan of history and culture, you need to visit the ruins of the Azuchi castle the castle 
+                    of the warlordn "Oda Nobunaga". Oda Nobunaga indirectly prepared Japan to be a country with freedom
+                    of religion.<br>
+                    Azuchi Castle (安土城, Azuchi-jō) was one of the primary castles of Oda Nobunaga located in the Azuchi 
+                    neighborhood of the city of Ōmihachiman, Shiga Prefecture. The site of the castle was designated a National 
+                    Historic Site in 1926, with the designation upgraded to that of a Special National Historic Site in 1952.
+                    The castle is located within the grounds of the Biwako Quasi-National Park.<br><br>
+
+                    Azuchi Castle was built from 1576 to 1579 on Mount Azuchi on the eastern shore of Lake Biwa in 
+                    Ōmi Province. Nobunaga intentionally built Azuchi Castle close enough to Kyoto that he could 
+                    watch over and guard the approaches to the capital, but outside Kyoto so his fortress would be 
+                    immune to the fires and conflicts that occasionally consumed the city. Azuchi Castle's location 
+                    was also strategically advantageous in managing the communications and transportation routes 
+                    between Nobunaga's greatest foes – the Uesugi to the north, the Takeda in the east, and the Mōri 
+                    to the west. Azuchi Castle was demolished in 1582 by Akechi Mitsuhide after his assassination of 
+                    Nobunaga in the Honno-ji Incident.<br><br>
+
+                    The Azuchi-Momoyama period of Japanese history partially takes its name from Azuchi Castle.
+
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="contact-information">
+            <div class="address">
+                <h3>Omihachiman Chamber of Commerce</h3>
+                <img class="map" src="../omihachiman/images/map.png" alt="Commerce Map">
+                <p>Shiga-ken,<br>Omihachiman,<br>Anyoji-cho, 4-35<br>
+                Tel: +81 90-1278-3684</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004216157931" target="_blank">
+                    <img src="../omihachiman/images/facebook.png" alt="facebook icon"></a>
+                <a href="mailto:hyrum.hilamatu@gmail.com" target="_blank">
+                    <img class="mail" src="../omihachiman/images/gmail.png" alt="gmail icon"></a>
+            </div>
+        </section>            
+        <div class="footer-bar">
+            <p class="source">Weather Data Source:<span><a class="openweather" href="https://openweathermap.org">OpenWeatherMap</a></span></p>
+            <p class="source">Content source:<span><a href="https://ja.wikipedia.org/wiki/近江八幡市">Wikipedia</a></span></p>
+            <p>&copy; <span id="copyrightyear"></span> Omihachiman Chamber of Commerce - Hyrum Hilamatu - Japan - BYU online learning</p>
+            <p class="lastmodified">Last updated: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+         WebFont.load({google: {families: ['Yuji Boku']}})
+         WebFont.load({google: {families: ['Lobster']}})
+    </script>
+</body>
+</html>
