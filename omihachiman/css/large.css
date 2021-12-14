@@ -37,6 +37,9 @@
         grid-column: 3;
     }
     /* ---------------------------------------City CSS---------------------------------- */
+    div.nobunaga{
+        margin: 200px;
+    }
     
     thead tr th{
         font-size: 20px;

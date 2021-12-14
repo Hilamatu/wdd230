@@ -90,6 +90,14 @@
     }
 /* --------------------------------------City CSS------------------------------------ */
 
+div.nobunaga{
+    font-family: "Yuji Boku";
+    font-size: 50px;
+    position: absolute;
+    margin: 50px;
+}
+
+
     thead tr th{
         font-size: 30px;
     }

@@ -333,6 +333,13 @@ div.address p {
 }
 
 /* --------------------------------------City CSS---------------------------- */
+div.nobunaga{
+    font-family: "Yuji Boku";
+    font-size: 20px;
+    position: absolute;
+    margin: 30px;
+}
+
 
 main section.demography h2{
     text-align: center;
