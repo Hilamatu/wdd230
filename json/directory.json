@@ -1,0 +1,46 @@
+{
+    "directory": [
+        {
+            "name" : "Partik",
+            "contact" : "0748-32-8312",
+            "link" : "https://hitosara.com/0006046354/?cid=gm_yoyaku",
+            "logo" : "none"
+        },
+        {
+            "name" : "Hachiman-Bori",
+            "contact" : "0748-32-7003",
+            "link" : "https://www.oumi-waden.com/ship",
+            "logo" : "none"
+        },
+        {
+            "name" : "Omisampa",
+            "contact" : "080-5812-6293",
+            "link" : "https://www.facebook.com/profile.php?id=100074888106894",
+            "logo" : "omisampalogo.jpeg"
+        },
+        {
+            "name" : "StaleFink",
+            "contact" : "0748-38-5505",
+            "link" : "http://www.stalefink.com/index.html",
+            "logo" : "stalefink.jpeg"
+        },
+        {
+            "name" : "Tenkaippin",
+            "contact" : "0748-37-7269",
+            "link" : "https://www.tenkaippin.co.jp/shop/detail.php?id=65",
+            "logo" : "tenkaippin.jpeg"
+        },
+        {
+            "name" : "JAGreen Kitekana",
+            "contact" : "0748-25-5100",
+            "link" : "https://www.jagreenohmi.jas.or.jp/about/kitekana.html",
+            "logo" : "ja.png"
+        },
+        {
+            "name" : "Nobunaga no Yakata Museum",
+            "contact" : "0748-46-6512",
+            "link" : "https://www.azuchi-shiga.com/n-yakata.htm",
+            "logo" : "nobunaga.png"
+        }
+    ]
+}
