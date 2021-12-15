@@ -128,6 +128,33 @@ div.nobunaga{
         width: 50%;
         margin-right: 15px;
     }
+/* ---------------------------------Directory CSS-------------------------------------- */
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main.businessCards button {
+        display: inline;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    div.list section img {
+        display: none;
+    }
+
+    main.businessCards div.list section {
+        display: flex;
+        background-color: #EAAC8B;
+        text-align: left;
+    }
+
+    main.businessCards div.list h2 {
+        text-align: left;
+        font-size: 18px;
+    }
+
 }
-
-

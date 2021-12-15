@@ -56,5 +56,18 @@
         float:right;
         margin: 60px;
     }
+/* --------------------------------------Directory CSS-------------------------- */
+    div.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
+    main.businessCards div.list h2 {
+        text-align: left;
+        font-size: 25px;
+    }
+
+    main.businessCards div.list p, a {
+        font-size: 25px;
+        
+    }
 }
